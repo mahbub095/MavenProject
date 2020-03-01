@@ -9,19 +9,28 @@ public class LandingPage {
 	
 public WebDriver driver;
 	
-	By signin=By.cssSelector("a[href*='sign_in']");
- 
-	
-	
+   By email=By.cssSelector("[id='user_email']");
+   By password=By.cssSelector("[type='password']"); 
+   By login=By.cssSelector("[value='Log In']");
+
 	public LandingPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
-		
-		this.driver=driver;
-		
+		this.driver=driver;	
 	}
 	
-           public WebElement getLogin()
+	public WebElement getEmail()
 	{
-		return driver.findElement(signin);
+		return driver.findElement(email);
+	}
+	
+
+	public WebElement getPassword()
+	{
+		return driver.findElement(password);
+	}
+	
+	public WebElement getLogin()
+	{
+		return driver.findElement(login);
 	}
 }
