@@ -15,29 +15,31 @@ public class base {
 
 	public static WebDriver driver;
 	public Properties prop;
-public WebDriver initializeDriver() throws IOException
-{
 	
- prop= new Properties();
-FileInputStream fis=new FileInputStream("D:\\Maven Project\\Maven\\src\\main\\java\\resource\\data.properties");
+    public WebDriver initializeDriver() throws IOException
+    {
+	
+    prop= new Properties();
+    
+   FileInputStream fis=new FileInputStream("D:\\Maven Project\\Maven\\src\\main\\java\\resource\\data.properties");
 
-prop.load(fis);
-String browserName=prop.getProperty("browser");
-System.out.println(browserName);
+   prop.load(fis);
+   String browserName=prop.getProperty("browser");
+   System.out.println(browserName);
 
-if(browserName.equals("chrome"))
-{
+   if(browserName.equals("chrome"))
+  {
 	 System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
-	driver= new ChromeDriver();
+	 driver= new ChromeDriver();
 		//execute in chrome driver
 	
-}
-else if (browserName.equals("firefox"))
-{
+  }
+   else if (browserName.equals("firefox"))
+   {
 	 driver= new FirefoxDriver();
 	//firefox code
-}
-else if (browserName.equals("IE"))
+  }
+  else if (browserName.equals("IE"))
 {
 //	IE code
 }

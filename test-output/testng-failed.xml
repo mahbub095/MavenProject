@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MavenProject.Maven.HomePage">
+      <class name="test.LoginTest">
         <methods>
-          <include name="basePageNavigation"/>
+          <include name="init"/>
+          <include name="initializeDriver"/>
         </methods>
-      </class> <!-- MavenProject.Maven.HomePage -->
+      </class> <!-- test.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

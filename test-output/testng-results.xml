@@ -1,55 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-01T21:57:47 BDT" name="Default suite" finished-at="2020-03-01T21:58:42 BDT" duration-ms="55156">
+  <suite started-at="2020-03-07T15:58:16 BDT" name="Default suite" finished-at="2020-03-07T15:58:19 BDT" duration-ms="2685">
     <groups>
     </groups>
-    <test started-at="2020-03-01T21:57:47 BDT" name="Default test" finished-at="2020-03-01T21:58:42 BDT" duration-ms="55156">
-      <class name="MavenProject.Maven.HomePage">
-        <test-method signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:MavenProject.Maven.HomePage@3e96bacf]" started-at="2020-03-01T21:57:47 BDT" name="basePageNavigation" data-provider="getData" finished-at="2020-03-01T21:58:21 BDT" duration-ms="33233" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nonrestricteduser@qw.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Restrcited User]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2020-03-07T15:58:16 BDT" name="Default test" finished-at="2020-03-07T15:58:19 BDT" duration-ms="2685">
+      <class name="test.LoginTest">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:test.LoginTest@55740540]" started-at="2020-03-07T15:58:01 BDT" name="initializeDriver" finished-at="2020-03-07T15:58:16 BDT" duration-ms="14800" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:MavenProject.Maven.HomePage@3e96bacf]" started-at="2020-03-01T21:58:21 BDT" name="basePageNavigation" data-provider="getData" finished-at="2020-03-01T21:58:42 BDT" duration-ms="21832" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[restricteduser@qw.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[456788]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Non restricted user]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="init()[pri:0, instance:test.LoginTest@55740540]" started-at="2020-03-07T15:58:16 BDT" name="init" finished-at="2020-03-07T15:58:19 BDT" duration-ms="2604" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-      </class> <!-- MavenProject.Maven.HomePage -->
+        </test-method> <!-- init -->
+      </class> <!-- test.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
