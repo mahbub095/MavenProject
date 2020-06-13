@@ -11,12 +11,10 @@ public class LoginPage  {
 	public LoginPage(WebDriver driver) {
 		this.driver =driver;
 	}
-	
-	
 	@FindBy(how=How.XPATH, using="//*[@id='txtUsername']") WebElement emailTextBox;
 	@FindBy(how=How.XPATH, using="//*[@id='txtPassword']") WebElement passwordcheck;
 	@FindBy(how=How.XPATH, using="//*[@id='btnLogin']") WebElement signButton;
- 
+//	@FindBy(linkText="My transfer") WebElement signButton2;
 	
 	public void setEmail(String  strEmail) {
 		emailTextBox.sendKeys(strEmail);

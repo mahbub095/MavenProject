@@ -1,17 +1,14 @@
-package test;
+package Ecommerce;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-public class TestBase {
-	
+public class Base {
+	 
 	public static WebDriver driver =null;
 	@BeforeSuite
  
@@ -21,12 +18,9 @@ public class TestBase {
 			 driver= new ChromeDriver();
 			 driver.manage().window().maximize();
 			 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			 driver.get("https://opensource-demo.orangehrmlive.com/");
-		     System.out.println("1. Open Chrome & Application");
+			 driver.get("http://testword.test/");
+		     System.out.println("Open Chrome & Application");
 
 	    }
-	  
-	/*
-	 * @AfterSuite public void TeardownTest() { TestBase.driver.quit(); }
-	 */
+
 }

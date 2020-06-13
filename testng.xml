@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-   
+  <!--     <class name="MavenProject.Maven.AppTest"/>
+      <class name="MavenProject.Maven.HomePage"/> -->
           <class name="test.TestBase"/>
       <class name="test.LoginTest"/>
     </classes>
